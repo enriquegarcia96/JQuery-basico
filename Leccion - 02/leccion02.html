@@ -23,6 +23,22 @@
 			margin-bottom: 60px;
 		}
 
+		.morado{
+			color: purple;
+		}
+		.rojo{
+			color: red;
+		}
+		.azul{
+			color: blue;
+		}
+		.verde{
+			color: green;
+		}
+		.naranja{
+			color:orange;
+		}
+
 	</style>
 
 </head>
@@ -36,8 +52,9 @@
 
 	<div class="row">
 		
-		<div class="col-sm-4">
+		<div class="col-sm-4 text-center">
 			<img src="img/nophoto.jpg" class="img-rounded">
+			<h4>Enrique García</h4>
 		</div>
 
 		<div class="col-sm-5">
@@ -62,13 +79,8 @@
 
 
 	<script type="text/javascript">
-
-		/*
-		$("img")
-				.attr("src", "img2/luna.jpg")
-				.removeClass('img-rounded')
-				.addClass('img-thumbnail');*/
 				
+		//Manejo de las imagenes
 		//conceptp de encadenamiento (salta a al pagina una unica vez; es la mejor opcion de hacerlo)
 		$("img")
 			.attr("src","img/profesor.jpg") //Cambia el src
@@ -79,14 +91,26 @@
 		$("img").removeClass('img-circle');
 		$("img").addClass('img-thumbnail'); */
 
+
+		//Modificaciones al segundo bloque (col-sm-5)
+		$(".col-sm-5")
+					.find("p")
+					//.text("saludos, soy un <u>Futuro</u> Junnior Developer!");
+					.html("saludos, soy un <u>Futuro</u> Junnior Developer!");
+
+
+		// Referencia  a la lista ordenada
+		$("ul li")
+			.eq(0).addClass('morado').end() //end => regresa al selector ( ul li )
+			.eq(1).addClass('rojo').end()
+			.eq(2).addClass('azul').end()
+			.eq(3).addClass('verde').end()
+			.eq(4).addClass('naranja').end();
+				
+		
+		
+
+
 	</script>
-
-
-
-
-
-
-
-
 </body>
 </html>
