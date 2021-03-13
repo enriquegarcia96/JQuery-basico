@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Leccion 01 - Booststrap</title>
+
+	<!-- Importacion del Jquery- -->
+	<script  src="js/lib/jquery-3.6.0.min.js" type="text/javascript" ></script>
+
+	<!-- Importacion del Bootstrap- -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<style>
+		.textoVerde{
+			color: green;
+			font-weight: bold;
+		}
+	</style>
+
+	<script>
+
+		$(document).ready(function(){
+			//jQuery('ul').addClass('textoVerde');
+			$('li:first-child').addClass('textoVerde');
+			$('li:last-child').addClass('textoVerde');
+		});
+
+		/*
+		$(function(){
+			$('ul').addClass('textoVerde');
+		})*/
+
+	</script>
+
+</head>
+<body>
+
+	<div class="container">
+		
+		<h1>Leccion 01</h1>
+		<hr>
+
+		<ul>
+			<li> <span class="label label-primary">Hola 1</span></li>
+			<li>Hola 2</li>
+			<li>Hola 3</li>
+		</ul>
+
+		<ul>
+			<li><span class="label label-primary">Negrita</span></li>
+			<li>Negrita</li>
+			<li>Negrita</li>
+		</ul>
+	</div>
+
+	
+
+
+</body>
+</html>
